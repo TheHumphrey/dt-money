@@ -1,9 +1,10 @@
-import { Header } from '../../components'
+import { Header, Summary } from '../../components'
 
 export const Transactions = () => {
   return (
     <>
       <Header />
+      <Summary />
     </>
   )
 }
