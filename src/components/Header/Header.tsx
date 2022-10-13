@@ -1,4 +1,4 @@
-import { HeaderContainer, HeaderContent } from './style'
+import { HeaderContainer, HeaderContent, NewTransactionButton } from './style'
 
 import logoImg from '../../assets/logo.svg'
 
@@ -8,7 +8,7 @@ export const Header = () => {
       <HeaderContent>
         <img src={logoImg} alt="" />
 
-        <button>Nova transação</button>
+        <NewTransactionButton>Nova transação</NewTransactionButton>
       </HeaderContent>
     </HeaderContainer>
   )
