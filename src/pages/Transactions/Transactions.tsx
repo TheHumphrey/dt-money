@@ -21,7 +21,7 @@ export const Transactions = () => {
 
         <TransactionsTable>
           <tbody>
-            {transactions.map((transaction) => (
+            {transactions?.map((transaction) => (
               <tr key={transaction.id}>
                 <td width="50%">{transaction.description}</td>
                 <td>
