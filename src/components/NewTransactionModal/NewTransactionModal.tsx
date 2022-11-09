@@ -4,6 +4,9 @@ import * as z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Controller, useForm } from 'react-hook-form'
 
+import { useContext } from 'react'
+import { TransactionContext } from '../../contexts/TransactionsContext'
+
 import {
   CloseButton,
   Content,
@@ -11,9 +14,7 @@ import {
   TransactionType,
   TransactionTypeButton,
 } from './style'
-import { api } from '../../lib/axios'
-import { useContext } from 'react'
-import { TransactionContext } from '../../contexts/TransactionsContext'
+
 
 const newTransactionsFormSchema = z.object({
   description: z.string(),
